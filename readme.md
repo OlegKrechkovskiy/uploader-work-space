@@ -1,6 +1,6 @@
 # Рабочий проект для insales-uploader
 
-> [My insales-uploader-workspace](https://github.com/)
+> [My insales-uploader-workspace](https://github.com/OlegKrechkovskiy/uploader-work-space)
 
 ## Установка
 
