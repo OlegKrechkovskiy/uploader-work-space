@@ -1,0 +1,30 @@
+{
+  "name": "uploader-work-space",
+  "version": "1.2.0",
+  "description": "",
+  "main": "insales-config.js",
+  "dependencies": {
+    "insales-uploader-autoprefixer": "^1.0.1",
+    "deepmix": "^1.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jsvalidate": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "postinstall": "npm i insales-uploader -g"
+  },
+  "browserslist": [
+    "> 2%",
+    "last 10 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "author": "Krechkovskiy Oleg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com//issues"
+  },
+  "homepage": "https://github.com/#readme"
+}
