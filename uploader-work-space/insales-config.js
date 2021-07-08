@@ -15,7 +15,7 @@ process.argv.forEach((val, index) => {
   if (~val.indexOf('site=')) {
     var shopFolder = val.split('=')[1];
     var stat = fs.statSync(shopFolder);
-    if(stat.isDirectory()) shop = shopFolder;
+    if (stat.isDirectory()) shop = shopFolder;
   }
 });
 
@@ -34,32 +34,53 @@ var defaultConfig = {
     root: './' + shop,
     backup: true, // Создавать backup после загрузки?
     assetsSync: true, // Делать синхронизацию с директорией assets?
+    excludeFiles: [],
+    onUpdate: function onUpdate() {
+      // обновление темы
+    },
+    assetsDomain: 'https://assets.insales.ru'
   },
   plugins: {
     // файлы которые не обрабатываются плагинами
     exclude: ['*.min.js', '*.min.css', '*.liquid'],
     // gulp плагины для стилей
-    style: function(stream) {
-        return stream
-          .pipe(autoprefixer({
-            browsers: ['last 10 versions'],
-            cascade: true
-          }))
+    style: function (stream) {
+      return stream
+        .pipe(autoprefixer({
+          browsers: ['last 10 versions'],
+          cascade: true
+        }))
     },
     // gulp плагины для скриптов
-    script: function(stream) {
-        return stream
-          .pipe(jsValidate())
+    script: function (stream) {
+      return stream
+        .pipe(jsValidate())
     },
     // gulp плагины для изображений
-    img: function(stream) {
-        return stream
-          .pipe(imagemin())
+    img: function (stream) {
+      return stream
+        .pipe(imagemin())
     }
   },
   util: {
     openBrowser: true // Открывать браузер при запуске стрима?
+  },
+  chokidarOptions: {
+    ignored: /[\/\\]\./,
+    ignoreInitial: true,
+    followSymlinks: true,
+    usePolling: false,
+    interval: 200,
+    delay: 0,
+    binaryInterval: 300,
+    alwaysStat: true,
+    depth: 99,
+    awaitWriteFinish: {
+      stabilityThreshold: 100,
+      pollInterval: 100
+    },
+    ignorePermissionErrors: true
   }
 }
 
-module.exports = extend(defaultConfig, require('./'+shop));
+module.exports = extend(defaultConfig, require('./' + shop));
