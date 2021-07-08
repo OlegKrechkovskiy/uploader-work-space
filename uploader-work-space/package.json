@@ -1,6 +1,6 @@
 {
   "name": "uploader-work-space",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "description": "",
   "main": "insales-config.js",
   "dependencies": {
@@ -19,12 +19,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/"
+    "url": "git+https://github.com/OlegKrechkovskiy/uploader-work-space"
   },
   "author": "Krechkovskiy Oleg",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com//issues"
+    "url": "https://github.com/OlegKrechkovskiy/uploader-work-space/issues"
   },
-  "homepage": "https://github.com/#readme"
+  "homepage": "https://github.com/OlegKrechkovskiy/uploader-work-space#readme"
 }
