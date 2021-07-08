@@ -1,5 +1,6 @@
 /backup
 /.history
+/**/backup
 
 npm-debug.log*
 
