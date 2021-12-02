@@ -47,7 +47,7 @@
 
 ## Примеры:
 
-`uploader` - запустит метод `start`
+`uploader a` - запустит метод `start`
 
 `uploader download` - запустит метод `download`
 
