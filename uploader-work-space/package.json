@@ -10,9 +10,6 @@
     "insales-uploader": "^1.12.6",
     "insales-uploader-autoprefixer": "^1.0.1"
   },
-  "scripts": {
-    "postinstall": "npm i insales-uploader"
-  },
   "browserslist": [
     "> 2%",
     "last 10 versions"
