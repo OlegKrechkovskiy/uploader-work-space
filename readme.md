@@ -13,7 +13,9 @@
 ##### !! Если ошибка при установке - удалить из package.json строку 
 > ``"postinstall": "npm i insales-uploader"``
 ##### !! И установить Uploader вручную (если не установелен)
-> ``npm i insales-uploader -g``
+> ``> npm i insales-uploader -g``
+##### !! При желании можно установить JSHint - инструмент статического анализа кода. Стандартная настройка уже есть в корне проекта
+> ``> npm install jshint``
 
 &nbsp;
 <hr>
