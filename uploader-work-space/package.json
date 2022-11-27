@@ -4,14 +4,14 @@
   "description": "",
   "main": "insales-config.js",
   "dependencies": {
-    "insales-uploader-autoprefixer": "^1.0.1",
     "deepmix": "^1.0.0",
     "gulp-imagemin": "^4.1.0",
-    "gulp-jsvalidate": "^4.0.0"
+    "gulp-jsvalidate": "^4.0.0",
+    "insales-uploader": "^1.12.6",
+    "insales-uploader-autoprefixer": "^1.0.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "postinstall": "npm i insales-uploader -g"
+    "postinstall": "npm i insales-uploader"
   },
   "browserslist": [
     "> 2%",

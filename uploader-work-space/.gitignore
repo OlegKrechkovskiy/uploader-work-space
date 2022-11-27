@@ -130,3 +130,6 @@ package-lock.json/
 /package-lock.json
 package.json/
 node_modules
+/insales/*
+!/insales/
+!/insales/shop_main

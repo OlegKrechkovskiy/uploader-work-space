@@ -8,12 +8,12 @@ var jsValidate = require('gulp-jsvalidate');
  * Активный магазин
  * Тут нужно указать активную директорию
  */
-var shop = 'shop_main';
+var shop = 'insales/shop_main';
 
 process.argv.forEach((val, index) => {
   // Проверка параметра с активным магазином в консоли
   if (~val.indexOf('site=')) {
-    var shopFolder = val.split('=')[1];
+    var shopFolder = 'insales/' + val.split('=')[1];
     var stat = fs.statSync(shopFolder);
     if (stat.isDirectory()) shop = shopFolder;
   }
