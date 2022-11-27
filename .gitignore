@@ -1,7 +1,12 @@
 /backup
 /.history
 /**/backup
-
+package-lock.json
+/package-lock.json
+package.json/
+node_modules
+/uploader-work-space/insales/*
+!/uploader-work-space/insales/shop_main
 npm-debug.log*
 
 # Windows thumbnail cache files
@@ -126,10 +131,3 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 /.idea
 /.vscode/
-package-lock.json/
-/package-lock.json
-package.json/
-node_modules
-/insales/*
-!/insales/
-!/insales/shop_main
