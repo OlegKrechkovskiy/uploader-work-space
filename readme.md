@@ -10,8 +10,10 @@
 > `nsales-uploader-autoprefixer` Аналог **gulp-autoprefixer**, но с необходимыми проверками и **scss** синтаксисом
 
 &nbsp;
-##### !! Если uploader уже установлен - убалить из package.json строку 
-> ``"postinstall": "npm i insales-uploader -g"``
+##### !! Если ошибка при установке - удалить из package.json строку 
+> ``"postinstall": "npm i insales-uploader"``
+##### !! И установить Uploader вручную (если не установелен)
+> ``npm i insales-uploader -g``
 
 &nbsp;
 <hr>
@@ -20,7 +22,7 @@
 
 ``insales-config.js`` - тут лежат дефолтные настройки, в переменной `shop` переключается рабочая директория.
 
-`/shop_main/` - пример рабочей директории.
+`insales/shop_main/` - пример рабочей директории.
 
 `index.js` - внутри каждой рабочей директории находится файл с настройками доступа к магазину.
 
