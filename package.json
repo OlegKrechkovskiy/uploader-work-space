@@ -1,7 +1,7 @@
 {
   "name": "uploader-work-space",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.3.0",
+  "description": "To work with Insales",
   "main": "insales-config.js",
   "dependencies": {
     "deepmix": "^1.0.0",

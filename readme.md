@@ -1,5 +1,7 @@
 # Рабочий проект для insales-uploader
 
+![GitHub](https://img.shields.io/github/license/OlegKrechkovskiy/uploader-work-space)  ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/OlegKrechkovskiy/uploader-work-space/main?label=version)
+
 > [My insales-uploader-workspace](https://github.com/OlegKrechkovskiy/uploader-work-space)
 
 ## Установка
