@@ -1,6 +1,9 @@
 var extend = require('deepmix')
 var fs = require('fs')
-var imagemin = require('gulp-imagemin')
+// var imagemin = require('gulp-imagemin')
+async function imagemin() {
+  const { default: imagemin } = await import('./node_modules/gulp-imagemin');
+}
 var autoprefixer = require('insales-uploader-autoprefixer')
 var jsValidate = require('gulp-jsvalidate');
 
