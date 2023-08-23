@@ -1,0 +1,15 @@
+name: package installation test
+run-name: Perform a test installation of packages 🚀
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install modules
+        run: npm cli
+      - run: echo "🖥️ npm install is ready"
