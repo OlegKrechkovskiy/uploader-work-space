@@ -1,6 +1,6 @@
 {
   "name": "uploader-work-space",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "To work with Insales",
   "main": "insales-config.js",
   "dependencies": {
