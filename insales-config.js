@@ -45,7 +45,7 @@ var defaultConfig = {
   },
   plugins: {
     // файлы которые не обрабатываются плагинами
-    exclude: ['*.min.js', '*.min.css', '*.liquid'],
+    exclude: ['*.min.js', '*.min.css', '*.liquid', '*.md'],
     // gulp плагины для стилей
     style: function (stream) {
       return stream
