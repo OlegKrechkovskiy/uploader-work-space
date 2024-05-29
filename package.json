@@ -5,9 +5,8 @@
   "main": "insales-config.js",
   "dependencies": {
     "deepmix": "^1.0.0",
-    "gulp-imagemin": "^8.0.0",
     "gulp-jsvalidate": "^5.0.0",
-    "insales-uploader": "^1.13.2",
+    "insales-uploader": "^1.13.5",
     "insales-uploader-autoprefixer": "^1.0.1"
   },
   "browserslist": [
